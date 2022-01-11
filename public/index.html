@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#000000" />
+  <meta name="description" content="Web site created using create-react-app" />
+
+
+  <link rel="stylesheet" href="css/owl.carousel.css" type="text/css" media="all" />
+  <link rel="stylesheet" href="css/owl.theme.css" type="text/css" media="all" />
+  <!-- css files -->
+  <link rel="stylesheet" href="css/bootstrap.css"> <!-- Bootstrap-Core-CSS -->
+  <link rel="stylesheet" href="css/style.css" type="text/css" media="all" /> <!-- Style-CSS -->
+  <link rel="stylesheet" href="css/fontawesome-all.css" /> <!-- Font-Awesome-Icons-CSS -->
+  <!-- //css files -->
+
+  <!-- web-fonts -->
+  <link
+    href="//fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&amp;subset=latin-ext"
+    rel="stylesheet">
+  <title>Buddy Driver</title>
+  <link href="css/wickedpicker.css" rel="stylesheet" type='text/css' media="all" />
+  <link rel="stylesheet" href="css/jquery-ui.css" />
+
+  < </head>
+
+<body>
+  <noscript>You need to enable JavaScript to run this app.</noscript>
+  <div id="root"></div>
+
+
+
+  <script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
+  <script type="text/javascript" src="js/bootstrap.js"></script> <!-- Necessary-JavaScript-File-For-Bootstrap -->
+  <!-- //js -->
+  <!-- Time -->
+  <script type="text/javascript" src="js/wickedpicker.js"></script>
+  <script type="text/javascript">
+    $('.timepicker').wickedpicker({
+      twentyFour: false
+    });
+  </script>
+  <!--// Time -->
+  <!-- Calendar -->
+  <script src="js/jquery-ui.js"></script>
+  <script>
+    $(function () {
+      $("#datepicker,#datepicker1,#datepicker2,#datepicker3").datepicker();
+    });
+  </script>
+  <!-- //Calendar -->
+  <!-- carousel -->
+  <script src="js/owl.carousel.js"></script>
+  <script>
+    $(document).ready(function () {
+      $('.owl-carousel').owlCarousel({
+        loop: true,
+        margin: 10,
+        responsiveClass: true,
+        responsive: {
+          0: {
+            items: 1,
+            nav: true
+          },
+          600: {
+            items: 1,
+            nav: false
+          },
+          900: {
+            items: 2,
+            nav: false
+          },
+          1000: {
+            items: 3,
+            nav: true,
+            loop: false,
+            margin: 20
+          }
+        }
+      })
+    })
+  </script>
+  <!-- //carousel -->
+
+  <!--slider-->
+  <script src="js/responsiveslides.min.js"></script>
+  <script>
+    $(function () {
+      // Slideshow 1
+      $("#slider1").responsiveSlides({
+        auto: true,
+        pager: true,
+        nav: true,
+        speed: 500,
+        namespace: "centered-btns"
+      });
+    });
+  </script>
+  <!--//slider-->
+
+  <!-- start-smoth-scrolling -->
+  <script src="js/SmoothScroll.min.js"></script>
+  <script type="text/javascript" src="js/move-top.js"></script>
+  <script type="text/javascript" src="js/easing.js"></script>
+  <script type="text/javascript">
+    jQuery(document).ready(function ($) {
+      $(".scroll").click(function (event) {
+        event.preventDefault();
+        $('html,body').animate({ scrollTop: $(this.hash).offset().top }, 1000);
+      });
+    });
+  </script>
+  <!-- here stars scrolling icon -->
+  <script type="text/javascript">
+    $(document).ready(function () {
+      /*
+        var defaults = {
+        containerID: 'toTop', // fading element id
+        containerHoverID: 'toTopHover', // fading element hover id
+        scrollSpeed: 1200,
+        easingType: 'linear' 
+        };
+      */
+
+      $().UItoTop({ easingType: 'easeOutQuart' });
+
+    });
+  </script>
+  <!-- //here ends scrolling icon -->
+  <!-- start-smoth-scrolling -->
+
+  <!-- //js-scripts -->
+</body>
+
+
+</html>
